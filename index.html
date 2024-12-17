@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap"
+        rel="stylesheet">
+
+    <title>NorthGym</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="North Gym Homepage">
+                <img src="img/logoNorthgym.png" alt="Logo North Gym">
+            </a>
+        </div>
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </label>
+        <nav>
+            <ul>
+                <li><a href="fotoalbum.html">FOTOALBUM</a></li>
+                <li><a href="aboutus.html">HISTORIE</a></li>
+                <li><a href="kontakty.html">KONTAKTY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="banner" class="banner">
+            <section class="banner_text">
+                <h2>VÍTĚZTVÍ<br>ZAČÍNÁ V</h2>
+                <H1>NORTHGYM</H1>
+                <a href="#about"> <button type="submit">ZJISTIT VÍCE</button></a>
+
+            </section>
+        </div>
+
+        <div id="about" class="about">
+            <div class="about_text_stats">
+                <article class="about_text">
+                    <h2>O NÁS</h2>
+                    <p>Vítejte v NorthGym, revolučním fitness centru budoucnosti, kde se technologie setkává s pohybem.
+                        Naše prostory
+                        jsou vybaveny nejmodernějšími stroji s AI asistencí, které se přizpůsobí vašim cílům a potřebám.
+                        Nabízíme
+                        virtuálního trenéra, který vás provede každým krokem tréninku, a biometrické senzory, které
+                        sledují váš pokrok v
+                        reálném čase. NorthGym není jen místo pro cvičení – je to komunita lidí, kteří mění budoucnost
+                        fitness. Přijďte
+                        objevit své možnosti v prostředí, kde se sny o zdraví a síle stávají realitou.</p>
+                </article>
+
+                <div class="about_stats">
+                    <div class="about_stats_stat">
+                        <div class="stat">
+                            <h2>4</h2>
+                            <p>Posilovny<br></p>
+                        </div>
+                        <div class="stat">
+                            <h2>16</h2>
+                            <p>Osobních Trenérů<br></p>
+                        </div>
+                        <div class="stat">
+                            <h2>862 </h2>
+                            <p> m<sup>2</sup> Prostor</p>
+                        </div>
+                        <div class="stat">
+                            <h2>7639</h2>
+                            <p>Spokojených<br>zákazníků</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="about_stats_img">
+                <img src="img/gym3.jpg" alt="Company Image">
+            </div>
+        </div>
+
+
+        <section class="pricing-section">
+            <h2>Ceník Posilovny</h2>
+
+            <!-- Ceník vstupu -->
+            <div class="pricing-table">
+                <h3>Ceník Vstupu</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Typ Vstupu</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jednorázový vstup</td>
+                            <td>150 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Měsíční členství</td>
+                            <td>1 200 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Roční členství</td>
+                            <td>12 000 Kč</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Ceník služeb -->
+            <div class="pricing-table">
+                <h3>Ceník Služeb</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Služba</th>
+                            <th>Cena</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Osobní trenér (60 minut)</td>
+                            <td>500 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Masáž (30 minut)</td>
+                            <td>600 Kč</td>
+                        </tr>
+                        <tr>
+                            <td>Skupinová lekce jógy</td>
+                            <td>200 Kč</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="gymview">
+            <h2>Jak to u nás vypadá</h2>
+            <div class="gymview_bg">
+                <img src="img/topviewzoom2.jpg" alt="Gym layout">
+
+                <div class="info-circle" style="top: 20%; left: 50%;">
+                    <span class="tooltip">Cardio zóna: Tady najdete běžecké pásy a eliptické trenažéry.</span>
+                </div>
+
+                <div class="info-circle" style="top: 50%; left: 60%;">
+                    <span class="tooltip">Silová zóna: Zvedání činek a posilovací stroje.</span>
+                </div>
+
+                <div class="info-circle" style="top: 80%; left: 30%;">
+                    <span class="tooltip">Jóga a strečink: Klidné prostředí pro relaxaci.</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="northgym_footer">
+        <div class="footer_content">
+            <div class="footer_logo">
+                <a href="index.html" aria-label="North Gym Homepage">
+                    <img src="img/logoNorthgym.png" alt="">
+                </a>
+            </div>
+            <nav class="footer_nav">
+                <a href="#about">O nás</a>
+                <a href="#service_section">Služby</a>
+                <a href="contacts.html">Kontakt</a>
+                <a href="/privacy">Podmínky a ochrana osobních údajů</a>
+            </nav>
+            <p class="footer_copyright">
+                &copy; 2024 NorthGym. ST75788 UPCE.
+            </p>
+        </div>
+    </footer>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

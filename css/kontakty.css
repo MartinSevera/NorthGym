@@ -1,0 +1,179 @@
+
+main {
+    min-height: 100vh;
+}
+
+/* Hlavní banner */
+.contact_header {
+    position: relative;
+    background: linear-gradient(135deg, rgba(10, 10, 15, 0.8), rgba(26, 30, 36, 0.8)), url('../img/contacts_bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contact_header .overlay h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+
+}
+
+/* Sekce kontaktů */
+.contact_main {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+}
+
+.contact_form {
+    width: 45%;
+}
+
+.contact_options {
+    width: 90%;
+    padding-left: 10%;
+    padding: 0% 0% 0% 2%;
+    background-color: #000000;
+}
+
+.options_group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sloupce */
+    gap: 20px; /* Mezery mezi prvky */
+    background-color: #000000;
+}
+
+.contact_options i {
+    font-size: 32px;
+}
+
+.contact_option {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Obecné nastavení formuláře */
+.form {
+    height: 89%;
+    margin: 0 auto;
+    padding: 8%;
+    background: #333; /* Tmavě šedé pozadí */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff; /* Bílé písmo */
+    font-family: Arial, sans-serif;
+}
+
+/* Každá skupina formuláře */
+.form_group {
+    margin-bottom: 20px;
+}
+
+/* Popisky */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc; /* Světle šedé popisky */
+}
+
+/* Vstupní pole a textarea */
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #555; /* Tmavší rámeček */
+    border-radius: 4px;
+    background: #444; /* Šedé pozadí pole */
+    color: #fff; /* Bílé písmo */
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa; /* Světle šedý placeholder */
+}
+
+/* Změna vzhledu při zaměření */
+input:focus, textarea:focus {
+    outline: none;
+    background: #555; /* Tmavší pozadí při zaměření */
+}
+
+/* Tlačítko odeslat */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #333; /* Modrá barva */
+    color: #fff; /* Bílé písmo */
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Media queries pro responsivitu */
+@media (max-width: 768px) {
+
+    /* Pro tablety a menší obrazovky */
+    .contact_header .overlay h1 {
+        font-size: 2rem;
+    }
+
+    .contact_main {
+        flex-direction: column;
+        padding: 3%;
+    }
+
+    .contact_form, .contact_options {
+        width: 100%;
+    }
+
+    .options_group {
+        grid-template-columns: 1fr; /* 1 sloupec pro malé obrazovky */
+    }
+
+    .contact_options {
+        padding-left: 0;
+    }
+    .contact_option {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pro mobilní telefony */
+    .contact_header .overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact_main {
+        padding: 2%;
+    }
+
+    .contact_form, .contact_options {
+        width: 100%;
+    }
+
+    .contact_options {
+        padding-left: 0;
+    }
+
+    .options_group {
+        grid-template-columns: 1fr; /* 1 sloupec pro mobilní telefony */
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

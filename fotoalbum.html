@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fotoalbum.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap"
+        rel="stylesheet">
+
+
+    <title>Fotoalbum</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="North Gym Homepage">
+                <img src="img/logoNorthgym.png" alt="Logo North Gym">
+            </a>
+        </div>
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </label>
+        <nav>
+            <ul>
+                <li><a href="fotoalbum.html">FOTOALBUM</a></li>
+                <li><a href="aboutus.html">HISTORIE</a></li>
+                <li><a href="kontakty.html">KONTAKTY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>
+            FOTOALBUM
+        </h2>
+        <div class="filters">
+            <label for="year_filter">Rok:</label>
+            <select id="year_filter" name="year_filter">
+                <option value="all">Všechny</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+            </select>
+
+            <label for="gym_filter">Posilovna:</label>
+            <select id="gym_filter" name="gym-filter">
+                <option value="all">Všechny</option>
+                <option value="northgym_prague">NorthGym Praha</option>
+                <option value="northgym_brno">NorthGym Brno</option>
+                <option value="northgym_ostrava">NorthGym Ostrava</option>
+            </select>
+        </div>
+        <div class="gallery">
+            <div class="gallery_item">
+                <img src="fotoalbum/img1.jpg" alt="Image 1">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img2.jpg" alt="Image 2">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img3.jpg" alt="Image 3">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img4.jpg" alt="Image 1">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img5.jpg" alt="Image 2">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img6.jpg" alt="Image 3">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img7.jpg" alt="Image 3">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img9.webp" alt="Image 2">
+            </div>
+            <div class="gallery_item">
+                <img src="fotoalbum/img10.jpg" alt="Image 3">
+            </div>
+    </main>
+
+    <footer class="northgym_footer">
+        <div class="footer_content">
+            <div class="footer_logo">
+                <a href="index.html" aria-label="North Gym Homepage">
+                    <img src="img/logoNorthgym.png" alt="">
+                </a>
+            </div>
+            <nav class="footer_nav">
+                <a href="#about">O nás</a>
+                <a href="#service_section">Služby</a>
+                <a href="contacts.html">Kontakt</a>
+                <a href="/privacy">Podmínky a ochrana osobních údajů</a>
+            </nav>
+            <p class="footer_copyright">
+                &copy; 2024 NorthGym. ST75788 UPCE.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>

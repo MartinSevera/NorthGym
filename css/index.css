@@ -1,0 +1,388 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: lighter;
+    margin: 0px !important;
+    user-select: none;
+    caret-color: transparent;
+}
+
+/* Styl pro banner a text */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+}
+
+.banner_text {
+    text-align: center;
+    max-width: 30%;
+    padding: 5%;
+    color: white;
+    z-index: 2;
+}
+
+.banner_text h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.banner_text h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.banner_text p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.banner_text button {
+    padding: 0.8rem 2rem;
+    background-color: #c3b2a2;
+    color: #3d3d3d;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner_text a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+
+.about {
+    width: 95%;
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5% 0 5% 5%;
+    overflow: hidden;
+}
+
+.about_text {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.about_text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.about_text p {
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.about_stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_stats_stat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 10px;
+}
+
+.stat {
+    width: 22%;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.stat p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.about_stats_img {
+    margin-right: -30%;
+}
+
+.about_stats_img img {
+    box-shadow: 0 0 20px rgb(102, 29, 44);
+    border-radius: 20px;
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about_text_stats {
+    padding: 5% 0px 5% 5%;
+ 
+}
+.pricing-section {
+    text-align: center;
+    padding: 5%;
+    background-color: #131313;
+    color: #fff;
+}
+
+.pricing-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-table {
+    margin: 2rem auto;
+    width: 80%;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-table h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #c3b2a2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead th {
+    background-color: #3d3d3d;
+    padding: 10px;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #202020;
+}
+
+td, th {
+    padding: 15px;
+    font-size: 1rem;
+}
+
+tbody td {
+    color: #bbb;
+}
+
+table th, table td {
+    border-bottom: 1px solid #3d3d3d;
+}
+
+.gymview {
+    background-color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gymview h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.gymview_bg {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gymview_bg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.info-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 0, 0, 0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.info-circle:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooltip {
+    position: absolute;
+    top: -40px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+
+@media (max-width: 1024px) {
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-section h2 {
+        font-size: 2rem;
+    }
+
+    .info-circle {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .banner_text h2 {
+        font-size: 3rem;
+    }
+
+    .banner_text h1 {
+        font-size: 3.5rem;
+    }
+
+    .banner_text p {
+        font-size: 15px;
+    }
+
+    .banner_text button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.8rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pricing-table {
+        width: auto;
+    }
+
+    table th, table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .service-section {
+        height: auto !important;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .service-item {
+        height: 300px;
+    }
+
+    .service-front,
+    .service-back {
+        font-size: 1rem;
+    }
+
+    .about_stats_img {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .stat {
+        width: 45%;
+    }
+
+    .tooltip {
+        font-size: 12px;
+    }
+
+    .banner_text {
+        max-width: 80%;
+        padding: 3%;
+    }
+
+    .banner_text h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner_text h1 {
+        font-size: 3rem;
+    }
+
+    .banner_text p {
+        font-size: 14px;
+    }
+
+    .banner_text button {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .services {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .service-item {
+        height: 250px;
+    }
+
+    .service-front,
+    .service-back {
+        font-size: 0.9rem;
+    }
+    .stat {
+        width: 100%;
+    }
+}
+

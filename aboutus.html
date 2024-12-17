@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap"
+        rel="stylesheet">
+
+    <title>O nás</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="North Gym Homepage">
+                <img src="img/logoNorthgym.png" alt="Logo North Gym">
+            </a>
+        </div>
+        <input type="checkbox" id="menu_toggle">
+        <label for="menu_toggle" class="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </label>
+        <nav>
+            <ul>
+                <li><a href="fotoalbum.html">FOTOALBUM</a></li>
+                <li><a href="aboutus.html">HISTORIE</a></li>
+                <li><a href="kontakty.html">KONTAKTY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about_section">
+            <h1>Naše historie</h1>
+            <p>NorthGym je místo, kde se začínají nové příběhy. Pojďte s námi prozkoumat naši cestu.</p>
+        
+            <div class="timeline">
+                <div class="event">
+                    <div class="event_year">2010</div>
+                    <div class="event_image">
+                        <img src="img/gym.jpg" alt="První otevření">
+                    </div>
+                    <div class="event_caption">
+                        <h2>Otevření NorthGym</h2>
+                        <p>V roce 2010 jsme otevřeli naše první dveře, kde začal náš příběh o fitness a zdraví.</p>
+                    </div>
+                </div>
+            
+                <div class="event">
+                    <div class="event_year">2011</div>
+                    <div class="event_image">
+                        <img src="img/trainer.jpg" alt="První trenér">
+                    </div>
+                    <div class="event_caption">
+                        <h2>Naše první trenérka</h2>
+                        <p>V roce 2011 jsme přivítali našeho prvního trenéra, který se stal součástí rodiny NorthGym.</p>
+                    </div>
+                </div>
+            
+                <div class="event">
+                    <div class="event_year">2015</div>
+                    <div class="event_image">
+                        <img src="img/gym_group.jpg" alt="Milník">
+                    </div>
+                    <div class="event_caption">
+                        <h2>Milníky NorthGym</h2>
+                        <p>V průběhu let jsme se stali jedním z nejlepších gymů v regionu, a to díky našemu týmu a zákazníkům.</p>
+                    </div>
+                </div>
+                
+                <!-- Přidané eventy -->
+                <div class="event">
+                    <div class="event_year">2018</div>
+                    <div class="event_image">
+                        <img src="img/future_eq.jpg" alt="Nové zařízení">
+                    </div>
+                    <div class="event_caption">
+                        <h2>Nové zařízení NorthGym</h2>
+                        <p>V roce 2018 jsme otevřeli nové, moderní zařízení s nejnovějšími fitness technologiemi.</p>
+                    </div>
+                </div>
+                
+                <div class="event">
+                    <div class="event_year">2020</div>
+                    <div class="event_image">
+                        <img src="img/covid.jpg" alt="Bezpečnostní opatření během COVID-19">
+                    </div>
+                    <div class="event_caption">
+                        <h2>Bezpečnost během pandemie</h2>
+                        <p>Během pandemie COVID-19 jsme zaváděli přísná bezpečnostní opatření, aby bylo cvičení bezpečné pro všechny.</p>
+                    </div>
+                </div>
+            </div>  
+        </section>        
+    </main>
+
+    <footer class="northgym_footer">
+        <div class="footer_content">
+            <div class="footer_logo">
+                <a href="index.html" aria-label="North Gym Homepage">
+                    <img src="img/logoNorthgym.png" alt="">
+                </a>
+            </div>
+            <nav class="footer_nav">
+                <a href="#about">O nás</a>
+                <a href="#service_section">Služby</a>
+                <a href="contacts.html">Kontakt</a>
+                <a href="/privacy">Podmínky a ochrana osobních údajů</a>
+            </nav>
+            <p class="footer_copyright">
+                &copy; 2024 NorthGym. ST75788 UPCE.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/scroll.js"></script>
+    <script src="js/showAbout.js"></script>
+</body>
+
+</html>

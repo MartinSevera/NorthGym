@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Main Section */
+.about_section {
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.about_section h1 {
+    margin-top: 10vh;
+    font-size: 2.5em; /* Zvýšená velikost */
+}
+
+/* Globální styl pro timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 0; /* Zvýšení prostoru mezi událostmi */
+}
+
+/* Středová čára timeline */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ccc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Obecný styl pro události */
+.event {
+    position: relative;
+    width: 50%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 50px; /* Zvýšení vzdálenosti mezi událostmi */
+}
+
+/* Levá událost */
+.event:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+/* Pravá událost */
+.event:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+/* Spojovací čára mezi eventem a středovou čárou */
+.event::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.event:nth-child(odd)::before {
+    left: 100%;
+}
+
+.event:nth-child(even)::before {
+    left: 0%;
+}
+
+/* Rok události */
+.event_year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 10px;
+}
+
+.event:nth-child(odd) .event_year {
+    right: -120px;
+}
+
+.event:nth-child(even) .event_year {
+    left: -120px;
+}
+
+/* Obrázek v události */
+.event_image img {
+    max-width: 100%; /* Přizpůsobení velikosti kontejneru */
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Popisek k události */
+.event_caption {
+    margin-top: 10px;
+}
+
+.event_caption h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #ff5722;
+}
+
+.event_caption p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Responzivní úpravy pro mobilní zařízení */
+@media (max-width: 768px) {
+    .event:nth-child(odd) .event_year {
+        right: 90%;
+        left: 0px;
+        color: white; 
+    }
+    .event:nth-child(even) .event_year {
+         right: 90%;
+         left: 0px;
+         color: white; 
+    }
+    .event:nth-child(even) {
+        left: 0%;
+        text-align: left;
+    }
+
+    .event:nth-child(even)::before {
+        left: 100%;
+    }
+
+    .timeline {
+        max-width: 100%;
+        padding: 20px 0; /* Snížení paddingu pro kompaktnější vzhled */
+    }
+
+    .timeline::after {
+        width: 2px; /* Užší středová čára */
+        left: 95%;
+    }
+
+    .event {
+        margin-left: 5%;
+        width: 90%;
+        left: 0;
+        text-align: center;
+        margin-bottom: 40px; /* Snížení rozestupů mezi eventy */
+    }
+
+    
+
+    .event_image img {
+        max-width: 80%; /* Obrázky v menší šířce */
+    }
+
+    .event_caption h2 {
+        font-size: 1rem;
+    }
+
+    .event_caption p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Druhý breakpoint pro větší zařízení */
+@media (max-width: 1024px) {
+    .timeline {
+        padding: 40px 0;
+    }
+
+    .event {
+        margin-bottom: 40px;
+    }
+
+    .event_year {
+        font-size: 1.3rem;
+    }
+
+    .event_caption h2 {
+        font-size: 1.1rem;
+    }
+
+    .event_caption p {
+        font-size: 0.9rem;
+    }
+}

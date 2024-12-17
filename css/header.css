@@ -1,0 +1,94 @@
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    height: 10vh;
+    width:90%;
+    padding: 0 5%;
+    transition: background-color 0.3s; /* Plynulá změna pozadí */ 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: lighter;
+    margin: 0px !important;
+}
+
+header .logo img {
+    width: 240px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Styl pro hamburger menu (skryto na větších obrazovkách) */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Skrytí checkboxu */
+#menu_toggle {
+    display: none;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 180px;
+    }
+    header {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    header nav   {
+        display: none; /* Skryj menu na mobilních zařízeních */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+
+    #menu_toggle:checked + .hamburger + nav  {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.8);
+        
+    }
+
+    #menu_toggle:checked + .hamburger + nav ul {
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+
+
+    .hamburger {
+        display: block;
+    }
+}

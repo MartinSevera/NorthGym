@@ -1,0 +1,41 @@
+.northgym_footer {
+    background-color: #121212; /* Tmavé pozadí pro kontrast s neonovými barvami */
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.northgym_footer a {
+    color: #ffffff; /* Jemně neonová tyrkysová barva */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_logo a {
+    font-size: 1.8rem;
+    color: #ffffff;
+ 
+}
+footer .footer_logo img {
+    width: 240px;
+}
+
+
+.footer-nav {
+    margin: 20px 0;
+}
+
+.footer_nav a {
+    margin: 0 15px;
+    font-size: 1rem;
+}
+
+.footer_content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer_content p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #000000, #0d131d);
+    color: #f2f2f2;
+}
